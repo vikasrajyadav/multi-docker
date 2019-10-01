@@ -7,14 +7,6 @@ before_install:
 
 script:
   - docker run vikasrajyadav/react-test npm test -- --coverage
-  - bundle install
-  - bundle package
-  # Needed if no cache exists
-  - mkdir -p $INTEGRATIONS_DIR
-  - ls -al $INTEGRATIONS_DIR
-  - bundle exec rake setup_libs
-  - bundle exec rake ci:run
-  - ls -al $INTEGRATIONS_DIR
 
 
 after_success:
