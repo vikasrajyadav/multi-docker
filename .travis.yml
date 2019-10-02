@@ -17,7 +17,7 @@ after_success:
   #Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #Take those images and push them to docker hub
-  - docker push vikasrajyadav/mutli-client
-  - docker push vikasrajyadav/mutli-nginx
-  - docker push vikasrajyadav/mutli-server
-  - docker push vikasrajyadav/mutli-worker
+  - docker image push vikasrajyadav/mutli-client
+  - docker image push vikasrajyadav/mutli-nginx
+  - docker image push vikasrajyadav/mutli-server
+  - docker image push vikasrajyadav/mutli-worker
