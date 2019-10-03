@@ -21,3 +21,4 @@ after_success:
   - docker push vikasrajyadav/mutli-nginx
   - docker push vikasrajyadav/mutli-server
   - docker push vikasrajyadav/mutli-worker
+  # testing
